@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "puppeteer": "^24.6.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "scripts": {
+    "test": "jest",
+    "test ui": "jest/tests/ui",
+    "test api": "jest/tests/api",
+    "test unit": "jest/tests/unit",
+    "test e2e": "jest/tests/e2e"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
